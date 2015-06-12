@@ -1,0 +1,27 @@
+%h1 Listing mma_gyms
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Address
+      %th Phone
+      %th Website
+      %th
+      %th
+      %th
+
+  %tbody
+    - @mma_gyms.each do |mma_gym|
+      %tr
+        %td= mma_gym.name
+        %td= mma_gym.address
+        %td= mma_gym.phone
+        %td= mma_gym.website
+        %td= link_to 'Show', mma_gym
+        %td= link_to 'Edit', edit_mma_gym_path(mma_gym)
+        %td= link_to 'Destroy', mma_gym, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Mma gym', new_mma_gym_path

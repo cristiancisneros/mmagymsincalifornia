@@ -1,0 +1,22 @@
+= form_for @mma_gym do |f|
+  - if @mma_gym.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@mma_gym.errors.count, "error")} prohibited this mma_gym from being saved:"
+      %ul
+        - @mma_gym.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :address
+    = f.text_field :address
+  .field
+    = f.label :phone
+    = f.text_field :phone
+  .field
+    = f.label :website
+    = f.text_field :website
+  .actions
+    = f.submit 'Save'
