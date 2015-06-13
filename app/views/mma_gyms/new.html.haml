@@ -1,5 +1,24 @@
-%h1 New mma_gym
+.main{:role => "main"}
+  %section.page-top
+    .container
+      .row
+        .col-md-12
+          %ul.breadcrumb
+            %li
+              %a{:href => "/"} Home
+            %li.active New MMA Gym
+      .row
+        .col-md-12
+          %h2 New MMA Gym
+
+.container
+  .row
+    .col-md-6
+    .row
 
 = render 'form'
 
-= link_to 'Back', mma_gyms_path
+.row
+.form-group
+.col-md-6
+= link_to 'Back', mma_gyms_path, class: 'btn btn-default'

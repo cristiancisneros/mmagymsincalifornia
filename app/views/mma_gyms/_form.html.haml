@@ -6,17 +6,27 @@
         - @mma_gym.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
+  .row
+  .form-group
+  .col-md-6
     = f.label :name
-    = f.text_field :name
-  .field
+    = f.text_field :name, class: 'form-control'
+  .row
+  .form-group
+  .col-md-6
     = f.label :address
-    = f.text_field :address
-  .field
+    = f.text_field :address, class: 'form-control'
+  .row
+  .form-group
+  .col-md-6
     = f.label :phone
-    = f.text_field :phone
-  .field
+    = f.text_field :phone, class: 'form-control'
+  .row
+  .form-group
+  .col-md-6
     = f.label :website
-    = f.text_field :website
-  .actions
-    = f.submit 'Save'
+    = f.text_field :website, class: 'form-control'
+  .row
+  .form-group
+  .col-md-6
+    = f.submit 'Save', class: 'btn btn-primary btn-lg'

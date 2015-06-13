@@ -43,8 +43,7 @@ group :development, :test do
   gem 'spring'
 end
 
-
-gem 'bootstrap-sass'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'devise'
 gem 'figaro', '>= 1.0.0.rc1'
 gem 'haml-rails'

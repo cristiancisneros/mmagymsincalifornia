@@ -1,0 +1,68 @@
+%footer#footer
+  .container
+    .row
+      .footer-ribon
+        %span Get in Touch
+      .col-md-3
+        .newsletter
+          %h4 Newsletter
+          %p Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.
+          #newsletterSuccess.alert.alert-success.hidden
+            %strong Success!
+            You've been added to our email list.
+          #newsletterError.alert.alert-danger.hidden
+          %form#newsletterForm{:action => "php/newsletter-subscribe.php", :method => "POST"}
+            .input-group
+              %input#email.form-control{:name => "email", :placeholder => "Email Address", :type => "text"}
+                %span.input-group-btn
+                  %button.btn.btn-default{:type => "submit"} Go!
+      .col-md-3
+        %h4 Latest Tweet
+        #tweet.twitter{"data-account-id" => ""}
+          %p Please wait...
+      .col-md-4
+        .contact-details
+          %h4 Contact Us
+          %ul.contact
+            %li
+              %p
+                %i.icon.icon-map-marker
+                %strong Address:
+                1234 Street Name, City Name, United States
+            %li
+              %p
+                %i.icon.icon-phone
+                %strong Phone:
+                (123) 456-7890
+            %li
+              %p
+                %i.icon.icon-envelope
+                %strong Email:
+                %a{:href => "mailto:mail@example.com"} mail@example.com
+      .col-md-2
+        %h4 Follow Us
+        .social-icons
+          %ul.social-icons
+            %li.facebook
+              %a{"data-placement" => "bottom", :href => "http://www.facebook.com/", :rel => "tooltip", :target => "_blank", :title => "Facebook"} Facebook
+            %li.twitter
+              %a{"data-placement" => "bottom", :href => "http://www.twitter.com/", :rel => "tooltip", :target => "_blank", :title => "Twitter"} Twitter
+            %li.linkedin
+              %a{"data-placement" => "bottom", :href => "http://www.linkedin.com/", :rel => "tooltip", :target => "_blank", :title => "Linkedin"} Linkedin
+  .footer-copyright
+    .container
+      .row
+        .col-md-1
+          %a.logo{:href => "index.html"}
+            %img.img-responsive{:alt => "Porto Website Template", :src => "/assets/logo-footer.png"}
+        .col-md-7
+          %p © Copyright 2014. All Rights Reserved.
+        .col-md-4
+          %nav#sub-menu
+            %ul
+              %li
+                %a{:href => "page-faq.html"} FAQ's
+              %li
+                %a{:href => "sitemap.html"} Sitemap
+              %li
+                %a{:href => "contact-us.html"} Contact

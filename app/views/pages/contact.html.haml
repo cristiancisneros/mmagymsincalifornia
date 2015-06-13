@@ -1,2 +1,96 @@
-%h1 Pages#contact
-%p Find me in app/views/pages/contact.html.haml
+.main{:role => "main"}
+  %section.page-top
+    .container
+      .row
+        .col-md-12
+          %ul.breadcrumb
+            %li
+              %a{:href => "/"} Home
+            %li.active Contact Us
+      .row
+        .col-md-12
+          %h2 Contact Us
+ 
+  
+  .container
+    .row
+      .col-md-6
+        #contactSuccess.alert.alert-success.hidden
+          %strong Success!
+          Your message has been sent to us.
+        #contactError.alert.alert-danger.hidden
+          %strong Error!
+          There was an error sending your message.
+        %h2.short
+          %strong Contact
+          Us
+        %form#contactForm{:action => "php/contact-form.php", :type => "post"}
+          .row
+            .form-group
+              .col-md-6
+                %label Your name *
+                %input#name.form-control{"data-msg-required" => "Please enter your name.", :maxlength => "100", :name => "name", :type => "text", :value => ""}
+              .col-md-6
+                %label Your email address *
+                %input#email.form-control{"data-msg-email" => "Please enter a valid email address.", "data-msg-required" => "Please enter your email address.", :maxlength => "100", :name => "email", :type => "email", :value => ""}
+          .row
+            .form-group
+              .col-md-12
+                %label Subject
+                %input#subject.form-control{"data-msg-required" => "Please enter the subject.", :maxlength => "100", :name => "subject", :type => "text", :value => ""}
+          .row
+            .form-group
+              .col-md-12
+                %label Message *
+                %textarea#message.form-control{"data-msg-required" => "Please enter your message.", :maxlength => "5000", :name => "message", :rows => "10"}
+          .row
+            .col-md-12
+              %input.btn.btn-primary.btn-lg{"data-loading-text" => "Loading...", :type => "submit", :value => "Send Message"}
+      .col-md-6
+        %h4.push-top
+          Get in
+          %strong touch
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus.
+        %hr/
+        %h4
+          The
+          %strong Office
+        %ul.list-unstyled
+          %li
+            %i.icon.icon-map-marker
+            %strong Address:
+            1234 Street Name, City Name, United States
+          %li
+            %i.icon.icon-phone
+            %strong Phone:
+            (123) 456-7890
+          %li
+            %i.icon.icon-envelope
+            %strong Email:
+            %a{:href => "mailto:mail@example.com"} mail@example.com
+        %hr/
+        %h4
+          Business
+          %strong Hours
+        %ul.list-unstyled
+          %li
+            %i.icon.icon-time
+            Monday - Friday 9am to 5pm
+          %li
+            %i.icon.icon-time
+            Saturday - 9am to 2pm
+          %li
+            %i.icon.icon-time
+            Sunday - Closed
+%section.call-to-action.featured.footer
+  .container
+    .row
+      .center
+        %h3
+          Porto is
+          %strong everything
+          you need to create an
+          %strong awesome
+          website!
+          %a.btn.btn-lg.btn-primary{"data-appear-animation" => "bounceIn", :href => "#", :target => "_blank"} Buy Now!
+          %span.arrow.hlb{"data-appear-animation" => "rotateInUpLeft", :style => "top: -22px;"}
