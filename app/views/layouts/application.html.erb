@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mmagymsincalifornia</title>
+  <meta charset="utf-8">
+	<title>MMA Gyms In California</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="">
+	<meta name="author" content="cristian cisneros">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Web Fonts  -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+	<!-- Libs CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="assets/vendor/owl-carousel/owl.carousel.css" media="screen">
+	<link rel="stylesheet" href="assets/vendor/owl-carousel/owl.theme.css" media="screen">
+	<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" media="screen">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="assets/css/theme.css">
+	<link rel="stylesheet" href="assets/css/theme-elements.css">
+	<link rel="stylesheet" href="assets/css/theme-animate.css">
+
+	<!-- Current Page Styles -->
+	<link rel="stylesheet" href="assets/vendor/rs-plugin/css/settings.css" media="screen">
+	<link rel="stylesheet" href="assets/vendor/circle-flip-slideshow/css/component.css" media="screen">
+
+	<!-- Skin CSS -->
+	<link rel="stylesheet" href="assets/css/skins/blue.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="assets/css/theme-responsive.css" />
+
+	<!-- Head Libs -->
+	<script src="assets/vendor/modernizr.js"></script>
+
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+		<script src="vendor/respond.js"></script>
+	<![endif]-->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= render 'layouts/header' %>
 <%= yield %>
 
 </body>
