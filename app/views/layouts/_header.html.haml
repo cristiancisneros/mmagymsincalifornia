@@ -2,7 +2,7 @@
   .container
     %h1.logo
       %a{:href => "/"}
-        %img{:alt => "MMA gyms In California", "data-sticky-height" => "40", "data-sticky-width" => "82", :height => "54", :src => "/assets/logo.png", :width => "111"}/
+        %img{:alt => "MMA gyms In California", "data-sticky-height" => "40", "data-sticky-width" => "82", :height => "108", :src => "/assets/logo.png", :width => "122"}/
     .search
       %form#searchForm{:action => "page-search-results.html", :method => "get"}
         .input-group
@@ -13,17 +13,17 @@
     %nav
       %ul.nav.nav-pills.nav-top
         %li
-          %a{:href => "about-us.html"}
+          %a{:href => "/about"}
             %i.icon.icon-angle-right >
             About Us
         %li
-          %a{:href => "contact-us.html"}
+          %a{:href => "/contact"}
             %i.icon.icon-angle-right >
             Contact Us
         %li.phone
           %span
             %i.icon.icon-phone >
-            (123) 456-7890
+            (909) 556-3532
     %button.btn.btn-responsive-nav.btn-inverse{"data-target" => ".nav-main-collapse", "data-toggle" => "collapse"}
       %i.icon.icon-bars
   .navbar-collapse.nav-main-collapse.collapse
@@ -39,45 +39,15 @@
       %nav.nav-main.mega-menu
         %ul#mainMenu.nav.nav-pills.nav-main
           %li.dropdown.active
-            %a.dropdown-toggle{:href => "#"}
+            %a.dropdown-toggle{:href => "/"}
               Home
               %i.icon.icon-angle-down
-            %ul.dropdown-menu
-              %li.dropdown-submenu
-                %a{:href => "#"} Sliders
-                %ul.dropdown-menu
-                  %li
-                    %a{:href => "index.html"} Revolution Slider
-                  %li
-                    %a{:href => "index-slider-2.html"} Nivo Slider
-              %li
-                %a{:href => "index.html"} Home - Default
-              %li
-                %a{:href => "index-2.html"} Home - Color
-              %li
-                %a{:href => "index-3.html"} Home - Light
-              %li
-                %a{:href => "index-4.html"} Home - Video
-              %li
-                %a{:href => "index-5.html"} Home - Video - Light
-              %li
-                %a{:href => "index-one-page.html"} One Page Website
-          %li
-            %a{:href => "shortcodes.html"} Shortcodes
           %li.dropdown
-            %a.dropdown-toggle{:href => "#"}
-              About Us
-              %i.icon.icon-angle-down
-            %ul.dropdown-menu
-              %li
-                %a{:href => "about-us.html"} About Us
-              %li
-                %a{:href => "about-us-basic.html"} About Us - Basic
-              %li
-                %a{:href => "about-me.html"} About Me
+            %a.dropdown-toggle{:href => "/about"}
+              About
           %li.dropdown.mega-menu-item.mega-menu-fullwidth
-            %a.dropdown-toggle{:href => "#"}
-              Features
+            %a.dropdown-toggle{:href => "/mma_gyms"}
+              MMA Gyms
               %i.icon.icon-angle-down
             %ul.dropdown-menu
               %li
@@ -86,138 +56,70 @@
                     .col-md-3
                       %ul.sub-menu
                         %li
-                          %span.mega-menu-sub-title Main Features
+                          %span.mega-menu-sub-title Northern California
                           %ul.sub-menu
                             %li
-                              %a{:href => "feature-pricing-tables.html"} Pricing Tables
+                              %a{:href => "#"} 1
                             %li
-                              %a{:href => "feature-icons.html"} Icons
+                              %a{:href => "#"} 2
                             %li
-                              %a{:href => "feature-animations.html"} Animations
+                              %a{:href => "#"} 3
                             %li
-                              %a{:href => "feature-typograpy.html"} Typograpy
+                              %a{:href => "#"} 4
                             %li
-                              %a{:href => "feature-grid-system.html"} Grid System
+                              %a{:href => "#"} 5
                     .col-md-3
                       %ul.sub-menu
                         %li
-                          %span.mega-menu-sub-title Headers
+                          %span.mega-menu-sub-title Los Angeles
                           %ul.sub-menu
                             %li
-                              %a{:href => "index.html"} Header Version 1
+                              %a{:href => "#"} 1
                             %li
-                              %a{:href => "index-header-2.html"} Header Version 2
+                              %a{:href => "#"} 2
                             %li
-                              %a{:href => "index-header-3.html"} Header Version 3
+                              %a{:href => "#"} 3
                             %li
-                              %a{:href => "index-header-4.html"} Header Version 4
+                              %a{:href => "#"} 4
                             %li
-                              %a{:href => "index-header-5.html"} Header Version 5
+                              %a{:href => "#"} 5
                             %li
-                              %a{:href => "index-header-6.html"} Header Version 6
+                              %a{:href => "#"} 6
                             %li
-                              %a{:href => "index-header-7.html"} Header Version 7
+                              %a{:href => "#"} 7
                             %li
-                              %a{:href => "index-header-signin.html"} Header - Sign In / Sign Up
+                              %a{:href => "#"} 8
                             %li
-                              %a{:href => "index-header-logged.html"} Header - Logged
+                              %a{:href => "#"} 9
                     .col-md-3
                       %ul.sub-menu
                         %li
-                          %span.mega-menu-sub-title Footers
+                          %span.mega-menu-sub-title Inland Empire
                           %ul.sub-menu
                             %li
-                              %a{:href => "index.html#footer"} Footer Version 1
+                              %a{:href => "#"} 1
                             %li
-                              %a{:href => "index-footer-2.html#footer"} Footer Version 2
+                              %a{:href => "#"} 2
                             %li
-                              %a{:href => "index-footer-3.html#footer"} Footer Version 3
+                              %a{:href => "#"} 3
                             %li
-                              %a{:href => "index-footer-4.html#footer"} Footer Version 4
+                              %a{:href => "#"} 4
                     .col-md-3
                       %ul.sub-menu
                         %li
-                          %span.mega-menu-sub-title Blog
+                          %span.mega-menu-sub-title San Diego
                           %ul.sub-menu
                             %li
-                              %a{:href => "blog-full-width.html"} Blog Full Width
+                              %a{:href => "#"} 1
                             %li
-                              %a{:href => "blog-large-image.html"} Blog Large Image
+                              %a{:href => "#"} 2
                             %li
-                              %a{:href => "blog-medium-image.html"} Blog Medium Image
+                              %a{:href => "#"} 3
                             %li
-                              %a{:href => "blog-timeline.html"} Blog Timeline
+                              %a{:href => "#l"} 4
                             %li
-                              %a{:href => "blog-post.html"} Single Post
+                              %a{:href => "#"} 5
           %li.dropdown
-            %a.dropdown-toggle{:href => "#"}
-              Portfolio
-              %i.icon.icon-angle-down
-            %ul.dropdown-menu
-              %li
-                %a{:href => "portfolio-4-columns.html"} 4 Columns
-              %li
-                %a{:href => "portfolio-3-columns.html"} 3 Columns
-              %li
-                %a{:href => "portfolio-2-columns.html"} 2 Columns
-              %li
-                %a{:href => "portfolio-timeline.html"} Portfolio Timeline
-              %li
-                %a{:href => "portfolio-lightbox.html"} Portfolio Lightbox
-              %li
-                %a{:href => "portfolio-full-width.html"} Portfolio Full Width
-              %li
-                %a{:href => "portfolio-single-project.html"} Single Project
-          %li.dropdown
-            %a.dropdown-toggle{:href => "#"}
-              Pages
-              %i.icon.icon-angle-down
-            %ul.dropdown-menu
-              %li.dropdown-submenu
-                %a{:href => "#"} Shop
-                %ul.dropdown-menu
-                  %li
-                    %a{:href => "shop-full-width.html"} Shop - Full Width
-                  %li
-                    %a{:href => "shop-sidebar.html"} Shop - Sidebar
-                  %li
-                    %a{:href => "shop-product-full-width.html"} Shop - Product Full Width
-                  %li
-                    %a{:href => "shop-product-sidebar.html"} Shop - Product Sidebar
-                  %li
-                    %a{:href => "shop-cart.html"} Shop - Cart
-                  %li
-                    %a{:href => "shop-login.html"} Shop - Login
-                  %li
-                    %a{:href => "shop-checkout.html"} Shop - Checkout
-              %li
-                %a{:href => "page-full-width.html"} Full width
-              %li
-                %a{:href => "page-left-sidebar.html"} Left sidebar
-              %li
-                %a{:href => "page-right-sidebar.html"} Right sidebar
-              %li
-                %a{:href => "page-custom-header.html"} Custom Header
-              %li
-                %a{:href => "page-404.html"} 404 Error
-              %li
-                %a{:href => "page-team.html"} Team
-              %li
-                %a{:href => "page-services.html"} Services
-              %li
-                %a{:href => "page-careers.html"} Careers
-              %li
-                %a{:href => "page-faq.html"} FAQ
-              %li
-                %a{:href => "page-login.html"} Login / Register
-              %li
-                %a{:href => "sitemap.html"} Sitemap
-          %li.dropdown
-            %a.dropdown-toggle{:href => "#"}
+            %a.dropdown-toggle{:href => "/contact"}
               Contact Us
               %i.icon.icon-angle-down
-            %ul.dropdown-menu
-              %li
-                %a{:href => "contact-us.html"} Contact Us - Basic
-              %li
-                %a{:href => "contact-us-advanced.php"} Contact Us - Advanced
