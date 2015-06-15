@@ -1,18 +1,53 @@
+.main{:role => "main"}
+  %section.page-top
+    .container
+      .row
+        .col-md-12
+          %ul.breadcrumb
+            %li
+              %a{:href => "/"} Home
+            %li
+              %a{:href => "/mma_gyms/"} MMA Gyms
+            %li.active = @mma_gym.name
+      .row
+        .col-md-12
+          %h2 = @mma_gym.name
+
+.container
+  .row
+    .col-md-6
+    .row
+
 %p#notice= notice
 
-%p
+%h1
   %b Name:
   = @mma_gym.name
-%p
+%h2
   %b Address:
   = @mma_gym.address
-%p
+%h2
+  %b City:
+  = @mma_gym.city
+%h2
+  %b Zip:
+  = @mma_gym.zip
+%h2
+  %b State:
+  = @mma_gym.state
+%h2
   %b Phone:
   = @mma_gym.phone
-%p
+%h2
   %b Website:
   = @mma_gym.website
+%h2
+  %b Email:
+  = @mma_gym.email   
 
-= link_to 'Edit', edit_mma_gym_path(@mma_gym)
+.row
+.form-group
+.col-md-6
+= link_to 'Edit', edit_mma_gym_path(@mma_gym), class: 'btn btn-default'
 \|
-= link_to 'Back', mma_gyms_path
+= link_to 'Back', mma_gyms_path, class: 'btn btn-default'

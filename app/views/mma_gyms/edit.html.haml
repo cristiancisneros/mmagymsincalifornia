@@ -1,7 +1,25 @@
-%h1 Editing mma_gym
+.main{:role => "main"}
+  %section.page-top
+    .container
+      .row
+        .col-md-12
+          %ul.breadcrumb
+            %li
+              %a{:href => "/"} Home
+            %li.active Editing MMA Gym
+      .row
+        .col-md-12
+          %h2 Editing MMA Gym
+
+.container
+  .row
+    .col-md-12
+    .row
+
+%h1 Editing MMA Gym
 
 = render 'form'
 
-= link_to 'Show', @mma_gym
+= link_to 'Show', @mma_gym, class: 'btn btn-default'
 \|
-= link_to 'Back', mma_gyms_path
+= link_to 'Back', mma_gyms_path, class: 'btn btn-default'
