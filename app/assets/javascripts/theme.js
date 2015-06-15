@@ -139,7 +139,7 @@ Version: 		2.9.0 - Wed Mar 19 2014 16:59:18
 			// Responsive Menu Events
 			var addActiveClass = false;
 
-			$("#mainMenu li.dropdown > a, #mainMenu li.dropdown-submenu > a").on("click", function(e) {
+			$(document).on("click", "#mainMenu li.dropdown > a, #mainMenu li.dropdown-submenu > a", function(e) {
 
 				if($(window).width() > 979) return;
 
