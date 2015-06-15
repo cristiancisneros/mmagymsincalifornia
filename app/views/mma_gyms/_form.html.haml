@@ -19,13 +19,33 @@
   .row
   .form-group
   .col-md-6
-    = f.label :phone
-    = f.text_field :phone, class: 'form-control'
+    = f.label :city
+    = f.text_field :city, class: 'form-control'
   .row
   .form-group
-  .col-md-6
+  .col-md-3
+    = f.label :zip
+    = f.text_field :zip, class: 'form-control'
+  .row
+  .form-group
+  .col-md-3
+    = f.label :state
+    = f.text_field :state, class: 'form-control'
+  .row
+  .form-group
+  .col-md-3
+    = f.label :phone
+    = f.text_field :phone, class: 'form-control'    
+  .row
+  .form-group
+  .col-md-3
     = f.label :website
     = f.text_field :website, class: 'form-control'
+  .row
+  .form-group
+  .col-md-3
+    = f.label :email
+    = f.text_field :email, class: 'form-control'                
   .row
   .form-group
   .col-md-6

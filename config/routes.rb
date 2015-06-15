@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :mma_gyms
 
+
   get 'pages/mma_gyms'
   get 'pages/about'
   get 'pages/contact'
