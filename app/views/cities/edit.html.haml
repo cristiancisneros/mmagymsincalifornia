@@ -1,0 +1,25 @@
+.main{:role => "main"}
+  %section.page-top
+    .container
+      .row
+        .col-md-12
+          %ul.breadcrumb
+            %li
+              %a{:href => "/"} Home
+            %li.active Editing city
+      .row
+        .col-md-12
+          %h2 Editing city
+
+.container
+  .row
+    .col-md-12
+    .row
+
+%h1 Editing city
+
+= render 'form'
+
+= link_to 'Show', @city, class: 'btn btn-default'
+\|
+= link_to 'Back', cities_path, class: 'btn btn-default'

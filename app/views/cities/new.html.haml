@@ -1,0 +1,24 @@
+.main{:role => "main"}
+  %section.page-top
+    .container
+      .row
+        .col-md-12
+          %ul.breadcrumb
+            %li
+              %a{:href => "/"} Home
+            %li.active New City
+      .row
+        .col-md-12
+          %h2 New City
+
+.container
+  .row
+    .col-md-6
+    .row
+
+= render 'form'
+
+.row
+.form-group
+.col-md-6
+= link_to 'Back', cities_path, class: 'btn btn-default'
