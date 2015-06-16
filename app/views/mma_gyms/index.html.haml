@@ -1,3 +1,20 @@
+.main{:role => "main"}
+  %section.page-top
+    .container
+      .row
+        .col-md-12
+          %ul.breadcrumb
+            %li
+              %a{:href => "/"} Home
+            %li.active MMA Gyms In California
+      .row
+        .col-md-12
+          %h2 MMA Gyms In California
+
+.container
+  .row
+    .col-md-12
+
 %h1 MMA Gyms In California
 
 %table.table.table-hover.table-condensed
@@ -5,22 +22,27 @@
     %tr
       %th Name
       %th Address
+      %th City
+      %th Zip
+      %th State
       %th Phone
       %th Website
-      %th
-      %th
-      %th
+      %th Email
 
   %tbody
     - @mma_gyms.each do |mma_gym|
       %tr
         %td= mma_gym.name
         %td= mma_gym.address
+        %td= mma_gym.city
+        %td= mma_gym.zip
+        %td= mma_gym.state
         %td= mma_gym.phone
         %td= mma_gym.website
-        %td= link_to 'Show', mma_gym
-        %td= link_to 'Edit', edit_mma_gym_path(mma_gym)
-        %td= link_to 'Destroy', mma_gym, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= mma_gym.email
+        %td= link_to 'Show', mma_gym, class: 'btn btn-info'
+        %td= link_to 'Edit', edit_mma_gym_path(mma_gym), class: 'btn btn-default'
+        %td= link_to 'Destroy', mma_gym, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-danger'
 
 %br
 

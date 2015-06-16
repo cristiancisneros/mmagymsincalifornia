@@ -6,20 +6,20 @@
           %ul.breadcrumb
             %li
               %a{:href => "/"} Home
-            %li.active Editing MMA Gym
+            %li.active Editing city
       .row
         .col-md-12
-          %h2 Editing MMA Gym
+          %h2 Editing city
 
 .container
   .row
     .col-md-12
     .row
 
-%h1 Editing MMA Gym
+%h1 Editing city
 
 = render 'form'
 
-= link_to 'Show', @mma_gym, class: 'btn btn-default'
+= link_to 'Show', @city, class: 'btn btn-default'
 \|
-= link_to 'Back', mma_gyms_path, class: 'btn btn-default'
+= link_to 'Back', cities_path, class: 'btn btn-default'

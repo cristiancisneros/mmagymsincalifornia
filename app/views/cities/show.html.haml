@@ -1,0 +1,38 @@
+.main{:role => "main"}
+  %section.page-top
+    .container
+      .row
+        .col-md-12
+          %ul.breadcrumb
+            %li
+              %a{:href => "/"} Home
+            %li
+              %a{:href => "/cities/"} Cities
+            %li.active = @city.name
+      .row
+        .col-md-12
+          %h2 = @city.name
+
+.container
+  .row
+    .col-md-6
+    .row
+
+%p#notice= notice
+
+%h1
+  %b City:
+  = @city.name
+%h1
+  %b County:
+  = @city.county
+%h1
+  %b State:
+  = @city.state_id
+
+.row
+.form-group
+.col-md-6
+= link_to 'Edit', edit_city_path(@city), class: 'btn btn-default'
+\|
+= link_to 'Back', cities_path, class: 'btn btn-default'
