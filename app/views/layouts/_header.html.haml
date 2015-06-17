@@ -2,28 +2,29 @@
   .container
     %h1.logo
       %a{:href => "/"}
-        %img{:alt => "MMA gyms In California", "data-sticky-height" => "40", "data-sticky-width" => "82", :height => "108", :src => "https://s3-us-west-1.amazonaws.com/mmagymsincalifornia/assets/images/logo.png", :width => "122"}/
+        = image_tag "logo.png", :alt => "MMA gyms In California", :data => {:"sticky-height" => 40, :"sticky-width" => 46}, :height => 108, :width => 122
     .search
       %form#searchForm{:action => "page-search-results.html", :method => "get"}
         .input-group
           %input#q.form-control.search{:name => "q", :placeholder => "Search...", :type => "text"}
             %span.input-group-btn
               %button.btn.btn-default{:type => "submit"}
-                %i.icon.icon-search
+                = fa_icon "search"
     %nav
       %ul.nav.nav-pills.nav-top
         %li
           %a{:href => "#"}
-            %i.icon.icon-angle-right >
+            = fa_icon "angle-right"
             Add A Gym
         %li.phone
           %span
-            %i.icon.icon-phone >
+            = fa_icon "phone"
             (909) 556-3532
     %button.btn.btn-responsive-nav.btn-inverse{"data-target" => ".nav-main-collapse", "data-toggle" => "collapse"}
-      %i.icon.icon-bars
+      = fa_icon "bars"
   .navbar-collapse.nav-main-collapse.collapse
     .container
+
       .social-icons
         %ul.social-icons
           %li.facebook
@@ -35,16 +36,28 @@
       %nav.nav-main.mega-menu
         %ul#mainMenu.nav.nav-pills.nav-main
           %li.dropdown.active
-            %a.dropdown-toggle{:href => "/"}
+            %a.dropdown-toggle{:href => "#"}
               Home
-              %i.icon.icon-angle-down
+              = fa_icon "angle-down"
+
+          %li.dropdown
+            = link_to "#" do
+              Dropdown
+              = fa_icon "angle-down"
+            %ul.dropdown-menu
+              %li
+                = link_to "Menu Item #1", "#"
+              %li
+                = link_to "Menu Item #2", "#"
+              %li
+                = link_to "Menu Item #3", "#"
           %li.dropdown
             %a.dropdown-toggle{:href => "/pages/about"}
               About
           %li.dropdown.mega-menu-item.mega-menu-fullwidth
             %a.dropdown-toggle{:href => "/mma_gyms"}
               MMA Gyms
-              %i.icon.icon-angle-down
+              = fa_icon "angle-down"
             %ul.dropdown-menu
               %li
                 .mega-menu-content
@@ -118,4 +131,4 @@
           %li.dropdown
             %a.dropdown-toggle{:href => "/pages/contact"}
               Contact Us
-              %i.icon.icon-angle-down
+              = fa_icon "angle-down"

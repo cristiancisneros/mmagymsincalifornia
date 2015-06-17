@@ -139,7 +139,7 @@ Version: 		2.9.0 - Wed Mar 19 2014 16:59:18
 			// Responsive Menu Events
 			var addActiveClass = false;
 
-			$("#mainMenu li.dropdown > a, #mainMenu li.dropdown-submenu > a").on("click", function(e) {
+			$(document).on("click", "#mainMenu li.dropdown > a, #mainMenu li.dropdown-submenu > a", function(e) {
 
 				if($(window).width() > 979) return;
 
@@ -586,7 +586,7 @@ Version: 		2.9.0 - Wed Mar 19 2014 16:59:18
 
 					// Navigation
 					navigation : false,
-					navigationText : ["<i class=\"icon icon-chevron-left\"></i>","<i class=\"icon icon-chevron-right\"></i>"],
+					navigationText : ["<i class=\"fa fa-chevron-left\"></i>","<i class=\"fa fa-chevron-left\"></i>"],
 					rewindNav : true,
 					scrollPerPage : false,
 
@@ -732,8 +732,8 @@ Version: 		2.9.0 - Wed Mar 19 2014 16:59:18
 			var $this = this,
 				previewParClosedHeight = 25;
 
-			$("section.toggle > label").prepend($("<i />").addClass("icon icon-plus"));
-			$("section.toggle > label").prepend($("<i />").addClass("icon icon-minus"));
+			$("section.toggle > label").prepend($("<i />").addClass("fa fa-plus"));
+			$("section.toggle > label").prepend($("<i />").addClass("fa fa-minus"));
 			$("section.toggle.active > p").addClass("preview-active");
 			$("section.toggle.active > div.toggle-content").slideDown(350, function() {});
 
