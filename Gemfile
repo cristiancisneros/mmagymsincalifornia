@@ -53,6 +53,7 @@ gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 gem 'upmin-admin'
 gem 'font-awesome-rails'
+gem 'friendly_id', '~> 5.1.0'
 
 group :development do
   gem 'better_errors'
