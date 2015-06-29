@@ -5,13 +5,15 @@
         .col-md-12
           %ul.breadcrumb
             %li
-              %a{:href => "/"} Home
+              = link_to "Home", root_path
             %li
-              %a{:href => "/cities/"} Cities
-            %li.active = @city.name
+              = link_to "Cities", cities_path
+            %li.active 
+              = @city.name
       .row
         .col-md-12
-          %h2 = @city.name
+          %h2 
+            = @city.name
 
 .container
   .row

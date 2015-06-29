@@ -69,6 +69,6 @@ class MmaGymsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mma_gym_params
-      params.require(:mma_gym).permit(:name, :address, :phone, :website)
+      params.require(:mma_gym).permit(:name, :address, :city, :zip, :state, :phone, :website)
     end
 end
