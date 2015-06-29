@@ -20,7 +20,7 @@
   .form-group
   .col-md-6
     = f.label :city
-    = f.select :city, options_for_select(%w[Los_Angeles San_Francisco San_Diego]), class: 'form-control'
+    = f.select :city, City.order("name ASC").map{|c| [c.name, c.name]}, class: 'form-control'
   .row
   .form-group
   .col-md-3
